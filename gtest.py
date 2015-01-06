@@ -6,14 +6,28 @@ try:
 except:
     print('fail')
     sys.exit
-wks = gs.open("TempLog1").sheet1
+sh = gs.open("TempLog1")
+wksheet = gs.open("TempLog1").sheet1
 
 #writing to Google sheet
 #values = [ datetime.datetime.now(), 'sensor', value1, value2]
-#wks.append_row(values)
+#wksheet.append_row(values)
 
-values_list = wkst.col_values(1)
 
-for v in value_list
-  print( v )
+wks = sh.get_worksheet(2)
+dateList = wks.col_values(1)     # 0 is first column
+temptargetList = wks.col_values(2)
+
+t = datetime.datetime.now()
+format = "%d/%m/%Y %H:%M"       #format have is zero padding for numbers
+t_now = t.strftime(format)
+
+t1 = dateList[4]
+t1
+
+while True:
+    t = datetime.datetime.now()
+    if t1 == t.strftime(format):
+        print("date match")
+        break
 

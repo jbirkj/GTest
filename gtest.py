@@ -2,7 +2,7 @@ import gspread
 import time, datetime
 
 try:
-    gs = gspread.login('jesperbirkp@gmail.com', 'zxkfdgmtpslbqpzg')
+    gs = gspread.login('jesperbirkp@gmail.com', 'password')
 except:
     print('fail')
     sys.exit
